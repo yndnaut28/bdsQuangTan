@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản đồ số xã Quảng Tân</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image.png" href="/logo/logo.png">
+</head>
+<body>
+    <header>
+        <div id = "logo">
+            <div id="anhlogodoan"><img src="/logo/logo.png" width="60px"></div>
+            <h3 id = "namelogo"> XÃ QUẢNG TÂN</h1>
+        </div>
+        <div id = "ntlg">
+            <div id = "nametag">
+                <p>CÔNG TRÌNH THANH NIÊN SỐ XÃ QUẢNG TÂN</p>
+                <h1>Bản đồ số xã Quảng Tân</h1>
+            </div>
+            <div id ="imglogo">
+                <img src="/logo/Thanh niên.png" alt="doan">
+            </div>
+        </div>
+    </header>
+
+    <section class="video-section">
+        <div class="video-player-container">
+            <iframe 
+                src="https://www.youtube.com/embed/x-ftrl-FfZY?si=4nHoS05ip_NlCLEp&autoplay=1&mute=1" 
+                title="Du lịch Ba Chẽ - Quảng Ninh" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Tìm theo tên/địa chỉ...">
+        <div class="custom-select" id="filterSelect">
+            <div class="selected">Tất cả</div>
+            <div class="options">
+                <div data-value="all">Tất cả</div>
+                <div data-value="hanhchinh">Hành chính</div>
+                <div data-value="yte">Y tế</div>
+                <div data-value="diachido">Địa chỉ đỏ</div>
+                <div data-value="dulich">Du lịch</div>
+                <div data-value="kinhte">Kinh tế</div>
+                <div data-value="tochuc">Trung tâm tổ chức sự kiện</div>
+                <div data-value="truonghoc">Trường học</div>
+                <div data-value="mamnon">Trường Mầm non</div>
+                <div data-value="muasam">Mua sắm</div>
+            </div>
+        </div>    
+    </div>
+
+    <div class="card-container">
+        <!-- Hành chính -->
+        <div class="card" data-type="hanhchinh" data-keywords="ĐU hđnd Hội đồng nhân dân">
+            <div class="card-img">
+                <img src="/img/ĐẢNG UỶ - HĐND XÃ.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trụ sở Đảng uỷ - HĐND xã Quảng Tân</h3>
+                <p>Thôn Đông, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/qGFosC2amngC5i8J9" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="hanhchinh" data-keywords="Ủy ban nhân dân ubnd ủy ban nhân dân">
+            <div class="card-img">
+                <img src="/img/UBND XÃ.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trụ sở UBND xã</h3>
+                <p>Thôn Tân Liên, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/uwVoEkLsHVNMFJ44A" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="hanhchinh" data-keywords="Uỷ ủy ban mặt trận tổ quốc ">
+            <div class="card-img">
+                <img src="/img/CƠ QUAN UBMTTQ XÃ.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trụ sở cơ quan UBMTTQ xã</h3>
+                <p>Thôn Đông, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/VkYjvz62r9mfpK6C6" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="hanhchinh">
+            <div class="card-img">
+                <img src="/img/Ban chỉ huy quân sự.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Ban Chỉ huy quân sự xã</h3>
+                <p>Bản Tài Lý Sáy, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/ZnALCSg9j3kc8gWRA" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="hanhchinh">
+            <div class="card-img">
+                <img src="/img/TRUNG TÂM CUNG ỨNG DỊCH VỤ.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trung tâm Cung ứng dịch vụ</h3>
+                <p>Thôn An Sơn, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/T8dwfWT1HzwheAHg9" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="hanhchinh">
+            <div class="card-img">
+                <img src="/img/CA XÃ.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Công an xã Quảng Tân</h3>
+                <p>Thôn Tân Liên, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/Mq8U436K1PZdsiEA8" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <!-- y tế -->
+        <div class="card" data-type="yte">
+            <div class="card-img">
+                <img src="img/Trạm y tế xã.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trạm y tế xã</h3>
+                <p>Thôn Đông, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/erbiahQkBov28rXB7" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <!-- Du lịch -->
+        <div class="card" data-type="dulich">
+            <div class="card-img">
+                <img src="/img/thác diệp cày.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Thác Diệp Cày</h3>
+                <p>Bản Tài Lý Sáy, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/UWGtFB7M6n12MXaR6" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="dulich">
+            <div class="card-img">
+                <img src="/img/Thac bach van.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Thác Bạch Vân</h3>
+                <p>Thôn Tầm Làng, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/WSu3Q7NA2jb7a31CA" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="dulich">
+            <div class="card-img">
+                <img src="/img/CHÙA SÂU 1.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Chùa Sâu</h3>
+                <p>Thôn Đồng Tâm, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/mPC2R9ed4YX8SriWA" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="dulich">
+            <div class="card-img">
+                <img src="/img/DAMHADONG 1.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Hồ Đầm Hà Động</h3>
+                <p>Thôn Châu Hà, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/nddwGw19TVHhxgbp7" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="dulich diachido">
+            <div class="card-img">
+                <img src="/img/DỐC ĐỜI ĐỜI.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Dốc Đời Đời</h3>
+                <p>Thôn Đông, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/s7eFaMfM69B2Mzzz9" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="dulich diachido">
+            <div class="card-img">
+                <img src="/img/Bia tưởng niệm.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Nhà bia tưởng niệm Anh Hùng Liệt Sĩ xã</h3>
+                <p>Thôn Trung Sơn, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/iW8CBN6HwegmjUvG7" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <!-- Kinh tế -->
+        <div class="card" data-type="kinhte" data-keywords="hợp tác xã">
+            <div class="card-img">
+                <img src="/img/Trại gà.png">
+            </div>
+            <div class="card-text">
+                <h3>HTX sản xuất kinh doanh Nông nghiệp Tuyền Hiền</h3>
+                <p>Thôn Tân Hoà, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/CwWKCYymGbkj3kTY6" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="kinhte" data-keywords="hợp tác xã">
+            <div class="card-img">
+                <img src="/img/htx QL.jpg">
+            </div>
+            <div class="card-text">
+                <h3>HTX Quế Lâm</h3>
+                <p>Bản Tài Lý Sáy, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/DoAdpmpG7K1k2fyN7" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="kinhte" data-keywords="CPTM XD">
+            <div class="card-img">
+                <img src="/img/thương mại đầm hà.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Công ty cổ phần thương mại & xây dựng Đầm Hà</h3>
+                <p>Thôn Tân Thanh, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/24RqoWX4w1YJBQS66" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="kinhte" data-keywords="hợp tác xã">
+            <div class="card-img">
+                <img src="/img/Thành mến.png">
+            </div>
+            <div class="card-text">
+                <h3>HTX Thành Mến</h3>
+                <p>Thôn Trung Sơn, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/52LFYJe8SLeqQoxQ9" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="kinhte" data-keywords="hợp tác xã sản xuất kinh doanh dịch vụ nông nghiệp">
+            <div class="card-img">
+                <img src="/img/Cá tầm.jpg">
+            </div>
+            <div class="card-text">
+                <h3>HTX SXKD, DVNN cá tầm Siệc Lống Mìn</h3>
+                <p>Bản Siệc Lống Mìn, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/3r3izANwbKZjt4wq7" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <!-- Mua sắm -->
+        <div class="card" data-type="muasam">
+            <div class="card-img">
+                <img src="/img/CHỢ NÔNG SẢN .jpg">
+            </div>
+            <div class="card-text">
+                <h3>Chợ nông sản</h3>
+                <p>Thôn Đông, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/15ssFJ9wvGJHyFUV6" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="muasam">
+            <div class="card-img">
+                <img src="/img/CHỢ QUẢNG LÂM.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Chợ Quảng Lâm</h3>
+                <p>Bản Tài Lý Sáy, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/83ppXK69UEYJF9Bh8" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="muasam">
+            <div class="card-img">
+                <img src="/img/Ba nhất.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Chợ Ba Nhất</h3>
+                <p>Thôn Làng Ngang, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/s3Nch4uDTsAmdpPg9" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <!-- Trung tâm tổ chức sự kiện -->
+        <div class="card" data-type="tochuc">
+            <div class="card-img">
+                <img src="/img/TT văn hoá thể thao.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trung tâm văn hoá thể thao</h3>
+                <p>Bản Tài Lý Sáy, xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/MaHiAo9JYqZFyXdB6" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <!-- Mầm non -->
+        <div class="card" data-type="mamnon">
+            <div class="card-img">
+                <img src="/img/TRƯỜNG MN QUẢNG TÂN.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trường Mầm non Quảng Tân</h3>
+                <p>Bản Tài Lý Sáy, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/k7sYPszfvjFw8zaQ8" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="mamnon">
+            <div class="card-img">
+                <img src="/img/MN dực Yên.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trường Mầm non Dực Yên</h3>
+                <p>Thôn An Sơn, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/1DR1WeEWyQwmyxjS8" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+       <!-- Trường học <TH & THCS & THPT -->
+        <div class="card" data-type="truonghoc" data-keywords="Tiểu học Cấp 1 THCS Cấp 2 Trung học cơ sở">
+            <div class="card-img">
+                <img src="/img/TRƯỜNG TH&THCS QUẢNG TÂN.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trường TH và THCS Quảng Tân </h3>
+                <p>Thôn Tân Liên, Xã Quảng Tân, Tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/YcZyrNZLQsctVPu19" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="truonghoc" data-keywords="Tiểu học Cấp 1 THCS Cấp 2 Trung học cơ sở">
+            <div class="card-img">
+                <img src="/img/TRƯỜNG TH&THCS QUẢNG AN.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trường TH và THCS Quảng An</h3>
+                <p>Thôn An Sơn, Xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/RCn5rL8CbKrANoF47" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+        <div class="card" data-type="truonghoc" data-keywords="Tiểu học Cấp 1 THCS Cấp 2 Trung học cơ sở">
+            <div class="card-img">
+                <img src="/img/TRƯỞNG TH&THCS QUẢNG LÂM.jpg">
+            </div>
+            <div class="card-text">
+                <h3>Trường TH và THCS Quảng Lâm</h3>
+                <p>Bản Tài Lý Sáy, Xã Quảng Tân, tỉnh Quảng Ninh</p>
+            </div>
+            <div class="card-footer">
+                <a class="map-btn" href="https://maps.app.goo.gl/JcsfYaLFN5cng51JA" target="_blank">Mở Google Maps</a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <div id = "logofooter">
+                <div id = "textlogof">
+                    <img src="/logo/logo.png" width="30px">
+                    <h3> XÃ QUẢNG TÂN</h1>
+                </div>
+                <p>Đoàn TNCS Hồ Chí Minh xã Quảng Tân</p>
+                <div id = "Thongtincoban">
+                    <div class="lienlac">
+                        <img src="/logo/mail.png" width="20">
+                        <strong style="font-family: Montserrat;">Gmail:</strong>doanxaquangtanqn@gmail.com
+                    </div>
+                    <div class="lienlac">
+                        <img src="/logo/call.png" width="20">
+                        <strong style="font-family: Montserrat;">Hotline:</strong>0822762268
+                    </div>
+                </div>
+            </div>
+
+            <div id = "tonglienlac">
+                <div class="lienlac">
+                    <a href="https://www.facebook.com/QuangTanNgayMoi" class="the" target="_blank">
+                        <img src="/logo/quảng tân ngày mới.jpg" width="20">
+                        Quảng Tân ngày mới
+                    </a>
+                </div>
+                <div class="lienlac">
+                    <a href="https://www.facebook.com/tuoitrequangtan" class="the" target="_blank">
+                        <img src="/logo/Tuổi trẻ QTan.jpg" width="20">
+                        Tuổi trẻ xã Quảng Tân
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id = "in4">
+            <div id = "ThongtinF">
+                <h2>Giới thiệu xã Quảng Tân</h2>
+                <a href="https://tinhthanhvn.com/bando/quang-ninh/xa-quang-tan">
+                    Thông tin chính xã Quảng Tân
+                </a>
+                <a href="https://daidoanket.vn/sac-mau-van-hoa-cac-dan-toc-o-xa-quang-tan.html">
+                    Sắc màu văn hóa các dân tộc ở xã Quảng Tân
+                </a>
+                <a href="https://baoquangninh.vn/xa-quang-tan-bao-ton-phat-huy-gia-tri-van-hoa-truyen-thong-cua-dong-bao-cac-dan-toc-3390315.html">
+                    Xã Quảng Tân: Bảo tồn, phát huy giá trị văn hoá truyền thống của đồng bào các dân tộc
+                </a>
+                <a href="https://nnmt.net.vn/xa-quang-tan-chon-du-lich-lam-mui-nhon-phat-trien-kinh-te">
+                    Xã Quảng Tân: Chọn du lịch làm “mũi nhọn” phát triển kinh tế
+                </a>
+                <a href="https://www.quangninh.gov.vn/Trang/ChiTietTinTuc.aspx?nid=156963">
+                    Xã Quảng Tân phát triển nông, lâm nghiệp gắn với du lịch cộng đồng
+                </a>
+                <a href="https://vietnamnet.vn/quang-tan-huong-den-xay-dung-nong-thon-moi-ben-vung-gan-voi-du-lich-sinh-thai-2434354.html">
+                    Quảng Tân hướng đến xây dựng nông thôn mới bền vững gắn với du lịch sinh thái
+                </a>
+                <a href="https://baoquangninh.vn/xa-quang-tan-huong-toi-ngay-bau-cu-15-3-3399612.html">
+                    Xã Quảng Tân hướng tới ngày bầu cử 15/3
+                </a>
+                <div id="audioToggleBtn" class="audio-toggle-btn">
+                    <h2>Âm nhạc địa phương</h2>
+                    <span class="arrow-icon">▼</span>
+                </div>
+
+                <div class="audio-player-container">
+                    
+                    <div id="songListContainer" class="song-list-container">
+                        
+                        <div class="song-item" 
+                            data-src="https://res.cloudinary.com/dmvldnkcx/video/upload/v1773396672/Qu%E1%BA%A3ng_T%C3%A2n_Ng%C3%A0y_M%E1%BB%9Bi_nhllag.mp3" 
+                            data-title="Quảng Tân ngày mới">
+                            🎵 Quảng Tân ngày mới
+                        </div>
+                        <div class="song-item" 
+                            data-src="https://res.cloudinary.com/dmvldnkcx/video/upload/v1773396761/VE_QUAN_TAN_myi1w6.mp4" 
+                            data-title="Về Quảng Tân">
+                            🎵 Về Quảng Tân
+                        </div>
+
+                    </div>
+
+                    <div id="playerWrapper" class="player-wrapper">
+                        
+                        <div class="player-header">
+                            <p id="currentPlayerTitle" class="current-player-title"></p>
+                            <span id="audioCloseBtn" class="audio-close-btn">×</span>
+                        </div>
+                    
+                        <audio id="localAudioPlayer" controls>
+                            Trình duyệt của bạn không hỗ trợ phát âm thanh.
+                        </audio>
+
+                    </div>
+                </div>
+
+                
+            </div>
+            <img src="/img/Bando.png">   
+        </div>
+        
+    </footer>
+    <div id = "last">Bản quyền © 2025 | Đoàn Thanh niên Cộng sản Hồ Chí Minh xã Quảng Tân</div>
+    <script src="script.js"></script>
+</body>
+</html>
